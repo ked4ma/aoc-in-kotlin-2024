@@ -1,20 +1,6 @@
 import kotlin.math.log10
 
 fun main() {
-    fun Long.pow(n: Int): Long {
-        var res = 1L
-        var i = n
-        var m = this
-        while (i > 0L) {
-            if (i and 1 == 1) {
-                res *= m
-            }
-            m *= m
-            i = i shr 1
-        }
-        return res
-    }
-
     fun solve(list: List<Long>, rep: Int): Long {
         var map = list.associateWith { 1L }
         repeat(rep) {
