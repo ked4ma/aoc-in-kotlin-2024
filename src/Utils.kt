@@ -33,3 +33,5 @@ fun Long.pow(n: Int): Long {
     }
     return res
 }
+
+fun range(n: Int) = 0 until n
